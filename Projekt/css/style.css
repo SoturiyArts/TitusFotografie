@@ -1,0 +1,65 @@
+/*
+ * TITUSFOTOGRAFIE
+ * Stylesheet _ Global
+ * Version 1.0
+*/
+
+/* Global */
+body{
+    margin: 0 auto;
+}
+
+/* Navbar incl. Logo */
+.site_navbar{
+    background: #272727;
+}
+.site_navbar nav{
+    position: relative;
+}
+.site_navbar nav ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+.site_navbar nav ul li{
+    float: left;
+    margin-right: 2em;
+}
+.site_navbar nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-bottom: 2px solid #19B5FE;
+}
+.site_navbar_logo{
+    float: left;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+/* Services */
+
+/* Works */
+
+/* Pre-Footer */
+
+/* Footer */
+
+/* Media Queries */
+@media screen and (min-width: 961px){
+    .hamburger{
+        display: none;
+    }
+}
+@media screen and (max-width: 961px){
+    .site_navbar nav ul{
+        display: none;
+    }
+}
