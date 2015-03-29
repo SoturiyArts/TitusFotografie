@@ -8,6 +8,8 @@
     <meta name="keywords" content="Titus Fotografie">
     <meta name="description" content="Titus Fotografie">
  	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />   
+	<link rel="stylesheet" type="text/css" href="responsive-nav.css" media="screen">
+	<script src="responsive-nav.js"></script>
 	<title>Titus Fotografie</title>
 
 </head>
@@ -21,19 +23,18 @@
 	Titus Fotografie
 	</div>
 
-	<div class="col group span_5_of_6">
-	<nav>
+	<nav class="nav-collapse nav">
 		<ul>
-			<li><a href="#">Navi 1</a></li>
-			<li><a href="#">Navi 2</a></li>
-			<li><a href="#">Navi 3</a></li>
-			<li><a href="#">Navi 4</a></li>
-			<li><a href="#">Navi 5</a></li>
-			<li><a href="#">Navi 6</a></li>
+			<li class="li"><a href="#">Navi 1</a></li>
+			<li class="li"><a href="#">Navi 2</a></li>
+			<li class="li"><a href="#">Navi 3</a></li>
+			<li class="li"><a href="#">Navi 4</a></li>
+			<li class="li"><a href="#">Navi 5</a></li>
+			<li class="li"><a href="#">Navi 6</a></li>
 		</ul>
 	</nav>
 
-	</div>
+
 </div>
 
 	<!-- Header -->
@@ -73,6 +74,9 @@
 
 
 
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
 
 </body>
 
