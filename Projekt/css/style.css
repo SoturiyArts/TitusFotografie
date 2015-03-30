@@ -5,14 +5,23 @@
 */
 
 /* Global */
+@font-face{
+    font-family: 'Icons';
+    src: url('fonts/icons_service/IcoMoon-Free.ttf') format('truetype');
+}
 body{
-    position: relative;
     margin: 0 auto;
 }
 
 /* Navbar incl. Logo */
 .site_navbar{
-    background: #272727;
+    /*position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;*/
+    background: #141414;
+    border-bottom: 2px solid #19B5FE;
 }
 .site_navbar nav{
     position: relative;
@@ -39,6 +48,11 @@ body{
     font-size: 0.9em;
     border-bottom: 2px solid #19B5FE;
 }
+.site_navbar nav ul li a:hover{
+    color: #19B5FE;
+    border-bottom: 0px;
+}
+
 .site_navbar_logo{
     float: left;
     color: white;
@@ -52,11 +66,38 @@ body{
 
 /* Header / Image Slider */
 .site_header{
-    height: 100vh;
 }
+}
+#slides{
+    display: none;
+}
+
 /* Services */
+.site_service{
+    background: #141414;
+    border-bottom:1px solid #333333;
+}
+.site_service_icon{
+    text-align: center;
+    color: white;
+}
+.site_service_text{
+    font-size: 1.5em;
+    color: white;
+    display: block;
+}
 
 /* Works */
+.site_works{
+    background: #141414;
+    padding-top: 1em;
+}
+.site_works article{
+    margin-bottom: 1em;
+}
+.site_works img{
+    max-width: 100%;
+}
 
 /* Pre-Footer */
 
@@ -75,6 +116,8 @@ body{
 }
 @media screen and (max-width: 450px){
     .site_header{
-        display: none;
+        position:absolute;
+        clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+        clip: rect(1px, 1px, 1px, 1px);
     }
 }

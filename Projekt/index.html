@@ -8,14 +8,17 @@
     <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/hamburgler.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/hamburgler.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
     <!-- JS -->
     <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
-    <script src="js/hamburgler.js"> </script> 
+    <script src="js/hamburgler.js"> </script>
+    <script src="jquery.slides.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    
 </head>
 <body>
     <!-- Navbar incl. Logo -->
@@ -55,78 +58,97 @@
     
     <!-- Header / Image Slider -->
     <div class="row site_header">
-        <div class="small-1 medium-2 large-6 columns">
-            <div class="main">
-		<ul id="cbp-bislideshow" class="cbp-bislideshow">
-		    <li><img src="images/1.jpg" alt="image01"/></li>
-		    <li><img src="images/2.jpg" alt="image02"/></li>
-                    <li><img src="images/3.jpg" alt="image03"/></li>
-                    <li><img src="images/4.jpg" alt="image04"/></li>
-		    <li><img src="images/5.jpg" alt="image05"/></li>
-                    <li><img src="images/6.jpg" alt="image06"/></li>
-		</ul>
-                <div id="cbp-bicontrols" class="cbp-bicontrols">
-                    <span class="cbp-biprev"></span>
-                    <span class="cbp-binext"></span>
-                </div>
-	    </div>
-        </div>
+	<div id="slides">
+	    <img src="images/1.jpg">
+	    <img src="images/2.jpg">
+	    <img src="images/3.jpg">
+	    <img src="images/4.jpg">
+	    <img src="images/5.jpg">
+	    <img src="images/6.jpg">
+	</div>
     </div>
     
     <!-- 3 Services -->
-    <div class="row">
+    <div class="row site_service">
         <div class="container">
             <section class="small-1 medium-2 large-6 columns">
                 <!-- Service 1 -->
                 <article class="small-1 medium-2 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <h1 class="site_service_icon">
+			<span class="flaticon-slr2"></span>
+		    </h1>
+		    <p class="site_service_text">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    </p>
                 </article>
                 
                 <!-- Service 1 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <h1 class="site_service_icon">
+			<span class="flaticon-seo40"></span>
+		    </h1>
+		    <p class="site_service_text">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    </p>
                 </article>
                 
                 <!-- Service 1 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <h1 class="site_service_icon">
+			<span class="flaticon-marketing8"></span>
+		    </h1>
+		    <p class="site_service_text">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    </p>
                 </article>
             </section>
         </div>
     </div>
     
     <!-- Works -->
-    <div class="row">
+    <div class="row site_works">
         <div class="container">
             <section class="small-1 medium-2 large-6 columns">
                 <!-- Work 1 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-1" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
                 
                 <!-- Work 2 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-2" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
                 
                 <!-- Work 3 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-3" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
                 
                 <!-- Work 4 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-4" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
                 
                 <!-- Work 5 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-5" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
                 
                 <!-- Work 6 -->
                 <article class="small-1 medium-1 large-2 columns">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		    <a href="images/works/work_2.jpg" data-lightbox="image-6" data-title="Caption-Text kommt cool">
+			<img src="images/works/work_2.jpg" alt="Alternativ-Text" />
+		    </a>
                 </article>
             </section>
         </div>
@@ -155,14 +177,22 @@
         </div>
     </div>
     
+    <!-- SlidesJS Required: Link to jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <!-- End SlidesJS Required -->
+
+    <!-- SlidesJS Required: Link to jquery.slides.js -->
+    <script src="js/jquery.slides.js"></script>
+    <!-- End SlidesJS Required -->
+
     <!-- Scripts -->
-        <!-- Background Slider -->
-    <script src="js/jquery.imagesloaded.min.js"></script>
-    <script src="js/cbpBGSlideshow.min.js"></script>
     <script>
-	$(function() {
-	    cbpBGSlideshow.init();
-	});
-    </script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 450
+      });
+    });
+  </script>
 </body>
 </html>
