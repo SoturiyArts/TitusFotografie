@@ -39,7 +39,7 @@
     background-color: #F9A530;
 }
 .menui {
-    background: #fff;
+    background: #19B5FE;
     transition: 0.6s ease;
     transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
     margin-top: 10px;
@@ -52,11 +52,12 @@
     position: fixed;
     display: block;
     padding: 9px;
-    height: 32px;
-    width:32px;
+    height: 45px;
+    width:43px;
     margin: 0px;
     top: 0;
     right: 5%;
+    background: #272727;
 }
 
 .mobilenav {
@@ -85,4 +86,10 @@
 }
 .mobilenav li:first-child {
     margin-top: 60px;
+}
+
+@media screen and (min-width: 961px){
+    .icon{
+        display: none;
+    }
 }

@@ -6,6 +6,7 @@
 
 /* Global */
 body{
+    position: relative;
     margin: 0 auto;
 }
 
@@ -44,6 +45,15 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+/*.hamburger{
+    position: absolute;
+    top: 60%;
+}*/
+
+/* Header / Image Slider */
+.site_header{
+    height: 100vh;
+}
 /* Services */
 
 /* Works */
@@ -60,6 +70,11 @@ body{
 }
 @media screen and (max-width: 961px){
     .site_navbar nav ul{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px){
+    .site_header{
         display: none;
     }
 }

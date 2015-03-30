@@ -22,7 +22,7 @@ $(document).ready(function () {
 // PUSH ESC KEY TO EXIT
 
 $(document).keydown(function(e) {
-    if (e.keyCode == 27) {
+    if ($('body').on('touchstart')){
         $(".mobilenav").fadeOut(500);
         $(".top-menu").removeClass("top-animate");
         $("body").removeClass("noscroll");
