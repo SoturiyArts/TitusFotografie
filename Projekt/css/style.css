@@ -116,8 +116,6 @@ body{
 }
 @media screen and (max-width: 450px){
     .site_header{
-        position:absolute;
-        clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
-        clip: rect(1px, 1px, 1px, 1px);
+        
     }
 }

@@ -1,0 +1,78 @@
+/*
+    Titus-Fotografie
+    grid.css
+    2015
+*/
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.columns{
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.push{
+    float: right;
+}
+.row{
+    width:auto;
+}
+.row:before, 
+.row:after{
+    content:" ";
+    display:table;
+}
+.row:after{
+    clear:both;
+}
+.row .row{
+    margin-left:-1em;
+    margin-right:-1em;
+}
+
+/* SMALL */
+@media screen and (max-width: 420px){
+    .small-1{
+        width: 50%;
+    }
+    .small-2{
+        width: 100%;
+    }
+}
+
+/* MED */
+@media screen and (min-width: 420px) and (max-width: 860px){
+    .medium-1{
+        width: 50%;
+    }
+    .medium-2{
+        width: 100%;
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 860px){
+    .large-1{
+        width: 16.6667%;
+    }
+    .large-2{
+        width: 33.3333%;
+    }
+    .large-3{
+        width: 50%;
+    }
+    .large-4{
+        width: 66.6667%;
+    }
+    .large-5{
+        width: 83.3333%;
+    }
+    .large-6{
+        width: 100%;
+    }
+}
