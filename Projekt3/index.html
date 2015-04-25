@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Title & Meta Informations -->
+    <title>Titus Fotografie | Jonas Titus Kerber - Ihr Fotograf</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    
+    <!-- CSS / Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/ionicons.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/modernizr.full.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- Slider -->
+    <script>
+        $(function() {
+          $('#slides').slidesjs({
+            width: 940,
+            height: 450,
+            navigation:{
+                active: false,
+            },
+            pagination:{
+                active: false,
+            },
+            play:{
+                active: true,
+                effect: "slide",
+                interval: 5000,
+                auto: true,
+                swap: true,
+                restartDelay: 2500,
+            },
+            callback:{
+                start: function(number){
+                    $("#slider-content1,#slider-content2,#slider-content3").fadeOut(500);},
+                    complete: function(number){
+                        $("#slider-content" + number).delay(500).fadeIn(1000);}}
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <!-- Header incl. Navigation -->
+    <header class="row site-header">
+        <div class="container">
+            <div class="small-2 medium-2 large-6 columns">
+                <!-- Title -->
+                <h1>
+                    <img src="img/title_logo.svg" alt="Titus-Fotografie" />
+                    Titus Fotografie
+                </h1>
+                
+                <!-- Navigation -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">workshops</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Slider -->
+    <div class="row site-slider">
+        <article id="slider-content1">
+            <h3>Title 1</h3>
+            <p>Multos mandaremus praetermissum. Ea multos in amet, in sint ita quae in pariatur 
+                esse esse cupidatat multos, esse aliquip do nostrud. Litteris veniam ita eiusmod 
+                tractavissent, probant aut anim hic dolor familiaritatem expetendis enim eiusmod 
+                de nam fore tempor domesticarum.</p>
+        </article>
+        <article id="slider-content2">
+            <h3>Title 2</h3>
+            <p>Non ipsum deserunt relinqueret a eram aliquip ullamco iis consequat ut iudicem 
+                et te commodo efflorescere. In litteris coniunctione. Quo in quorum incididunt 
+                in ubi multos domesticarum, noster consectetur vidisse tamen mentitum ad tempor 
+                enim cillum arbitror summis.</p>
+        </article>
+        <article id="slider-content3">
+            <h3>Title 3</h3>
+            <p>Veniam voluptate eu relinqueret, cernantur cillum offendit possumus quo quid 
+                incurreret praetermissum, cillum voluptate in dolor aute hic se dolor cillum 
+                quorum proident ubi probant sint culpa te eram o et anim do fore, quis 
+                expetendis comprehenderit..</p>
+        </article>
+        <div id="slides">
+            <img src="img/slides/1.jpg" alt="Slide1" />
+            <img src="img/slides/2.jpg" alt="Slide2" />
+            <img src="img/slides/3.jpg" alt="Slide3" />
+        </div>
+    </div>
+    
+    <!-- Services -->
+    <div class="row site-service">
+        <div class="container">
+            <!-- Heading -->
+            <h1 class="heading small-2 medium-2 large-6 columns">
+                SERVICES
+                <span class="border"></span>
+            </h1>
+            
+            <!-- Service1 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_buisness.svg" alt="Buisnessfotografie" />
+                <h3>Buisnessreportage</h3>
+                <p>Hochwertige und transparente Darstellung der Geschäftsräume und Arbeitsabläufe in Ihrem Unternehmen.</p>
+            </article>
+            <!-- Service2 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_product.svg" alt="Produktfotografie" />
+                <h3>Produktfotografie</h3>
+                <p>Qualitätsaufnahmen Ihrer Produkte zur Gestaltung von Printmedien, Werbemitteln und Onlineshops.</p>
+            </article>
+            <!-- Service3 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_portrait.svg" alt="Portraitfotografie" />
+                <h3>Portraitfotografie</h3>
+                <p>Professionelle Portraits und People-Aufnahmen für den privaten und familiären Gebrauch oder den beruflichen Fortschritt.</p>
+            </article>
+            <!-- Service4 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_film.svg" alt="Filmproduktion" />
+                <h3>Werbefilme & Produktion</h3>
+                <p>Hochwertige und eindrucksvolle Filmaufnahmen Ihres Events, Ihrer Geschäftsräume oder Arbeitsabläufe in Ihrem Unternehmen.</p>
+            </article>
+            <!-- Service5 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_press.svg" alt="Pressefotografie" />
+                <h3>Presse- & Eventreportage</h3>
+                <p>Ich begleite Sie auf Ihrer Veranstaltung mit eindrucksvollen und hochwertigen Bildern und bin Ihr Ansprechpartner für Pressefotos.</p>
+            </article>
+            <!-- Service6 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <img class="service-icon" src="img/icons/icon_service_press.svg" alt="Hochzeitsshooting" />
+                <h3>Hochzeitsshooting</h3>
+                <p>Ich begleite Sie auf Ihrer Veranstaltung mit eindrucksvollen und hochwertigen Bildern und bin Ihr Ansprechpartner für Pressefotos.</p>
+            </article>
+        </div>
+    </div>
+    
+    <!-- LATEST WORKS -->
+    <div class="row site-portfolio">
+        <div class="container">
+            <!-- Heading -->
+            <h1 class="heading small-2 medium-2 large-6 columns">
+                LATEST WORKS
+                <span class="border"></span>
+            </h1>
+            <!-- Image #1 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_1.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_1_small.jpg" alt="Image #1" /></a>
+            </article>
+            <!-- Image #2 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_2.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_2_small.jpg" alt="Image #2" /></a>
+            </article>
+            <!-- Image #3 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_3.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_3_small.jpg" alt="Image #3" /></a>
+            </article>
+            <!-- Image #4 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_4.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_4_small.jpg" alt="Image #4" /></a>
+            </article>
+            <!-- Image #5 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_5.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_5_small.jpg" alt="Image #5" /></a>
+            </article>
+            <!-- Image #6 -->
+            <article class="small-2 medium-1 large-2 columns">
+                <a href="img/portfolio/portfolio_6.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio/portfolio_6_small.jpg" alt="Image #6" /></a>
+            </article>
+        </div>
+    </div>
+    
+    <!-- Footer incl. Contact & Social Media -->
+    <footer class="row site-footer">
+        <div class="container">
+            <!-- Contact -->
+            <div class="small-2 medium-2 large-2 columns push contact">
+                <form method="post" action="php/contact.php">
+                    <h2>Kontaktieren Sie uns</h2>
+                    <p>Name</p>
+                    <input id="name" name="name" type="text" placeholder="Name" required/>
+                    <p>E-Mail</p>
+                    <input id="email" name="email" type="email" placeholder="E-Mail" required/>
+                    <p>Anliegen</p>
+                    <textarea id="comment" name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
+                    <button type="submit" name="send">Abschicken</button>
+                </form>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="small-2 medium-1 large-2 columns push social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
+                </ul>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="small-2 medium-1 large-2 columns copyright">
+                <h3>&copy; by Titus-Fotografie <br>Design by SoturiyARTS</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Navigation -->
+    <script>
+        $(function(){
+          $('#nav').click(function() {
+            $(this).toggleClass('open');
+          });
+        }); 
+    </script>
+    <!-- Slider -->
+    <script src="js/jquery.slides.js"></script>
+</body>
+</html>
