@@ -272,7 +272,14 @@ a{
     padding: 0.5em;
 }
 .site-about article img{
-    padding: 0.5em;
+    margin: 0.5em;
+    max-width: 10em;
+    border-radius: 100%;
+    border: 3px solid silver;
+}
+.site-about article img.about-logo{
+    border-radius: 0;
+    border-color: white;
 }
 .site-about article h2{
     font-weight: bold;
@@ -283,6 +290,47 @@ a{
 .site-about article p{
     padding: 0.5em;
     text-align: left;
+}
+
+/* WORKSHOPS */
+.site-workshop{
+    background: white;
+}
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#4c4c4c;
+    /* Type */
+    text-decoration:none;
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
