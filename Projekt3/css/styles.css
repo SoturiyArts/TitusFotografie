@@ -296,41 +296,142 @@ a{
 .site-workshop{
     background: white;
 }
-.accordion {
-    overflow:hidden;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-    border-radius:3px;
-    background:#f7f7f7;
+div.site-workshop-table{
+    margin-bottom: 0.5em;
 }
- 
-/*----- Section Titles -----*/
-.accordion-section-title {
-    width:100%;
-    padding:15px;
-    display:inline-block;
-    border-bottom:1px solid #1a1a1a;
-    background:#333;
-    transition:all linear 0.15s;
-    /* Type */
-    font-size:1.200em;
-    text-shadow:0px 1px 0px #1a1a1a;
-    color:#fff;
+div.site-workshop-header{
+    height: 3em;
+    width: 100%;
+    position: relative;
+    background: #2c3e50;
+    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
 }
- 
-.accordion-section-title.active, .accordion-section-title:hover {
-    background:#4c4c4c;
-    /* Type */
-    text-decoration:none;
+div.site-workshop-header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
 }
- 
-.accordion-section:last-child .accordion-section-title {
-    border-bottom:none;
+div.site-workshop-text{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    padding: 0.7em;
+    transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
- 
-/*----- Section Content -----*/
-.accordion-section-content {
-    padding:15px;
-    display:none;
+div.site-workshop-text:hover{
+    height: auto;
+}
+div.site-workshop-text h2{
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    color: #4183D7;
+}
+div.site-workshop-text ul.workshop-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+div.site-workshop-text ul li{
+    padding: 0.3em;
+    text-indent: -.7em;
+    font-style: italic;
+}
+div.site-workshop-text ul li:before{
+    content:"• ";
+    color: #4183D7;
+}
+div.site-workshop-text p.text-under{
+    padding-top: 0.5em;
+}
+div.site-workshop-text p.text-under strong{
+    font-weight: bold;
+}
+div.site-workshop-time{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background: #ECECEC;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div.site-workshop-time h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.5em;
+    text-align: center;
+}
+div.site-workshop-time h2 span{
+    font-weight: normal;
+    font-size: 0.5em;
+}
+div.site-workshop-price{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background: #F39C12;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div.site-workshop-price h2{
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0.5em;
+}
+div.site-workshop-price h2 span{
+    font-weight: normal;
+    font-size: 0.5em;
+}
+div.site-workshop-button{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background: #2c3e50;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0px 0px 5px 5px;
+    -moz-transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+div.site-workshop-button a{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8em 2.5em 0.8em 2.5em;
+}
+div.site-workshop-button:hover{
+    background: #4183D7;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
@@ -343,6 +444,19 @@ a{
 @media screen and (min-width: 420px){
     .site-footer div.social h2{
         display: none;
+    }
+    div.site-workshop-button a{
+        padding: 0.8em 1.5em 0.8em 1.5em;
+    }
+}
+@media screen and (min-width: 710px){
+    div.site-workshop-button a{
+        padding: 0.8em 3em 0.8em 3em;
+    }
+}
+@media screen and (min-width: 1000px){
+    div.site-workshop-button a{
+        padding: 0.8em 4em 0.8em 4em;
     }
 }
 @media screen and (min-width: 486px){
@@ -375,7 +489,7 @@ a{
     #slider-content1 p, #slider-content2 p, #slider-content3 p{
         font-size: 1em;
         margin-top: 1em;
-        padding: 0.em;
+        padding: 0.5em;
         border-radius: 5px;
         display: block;
         background-color:azure;
