@@ -435,8 +435,12 @@ div.site-workshop-button:hover{
 }
 
 /* WORKSHOP RENT */
+
+
+
 .site-workshop-rent{
     background: white;
+    text-align: center;
 }
 .site-workshop-rent h2{
     font-size: 1.2em;
@@ -470,6 +474,8 @@ div.site-workshop-button:hover{
     border-radius: 5px 0 5px 0;
     border: 2px solid #4183D7;
     background: #ECF0F1;
+}
+
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
@@ -624,4 +630,23 @@ div.site-workshop-button:hover{
         -moz-transform: translateY(0px);
         -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
     }
+}
+
+@media screen and (min-width: 421px){
+    .site-workshop-rent form input{
+        width: 40%;
+    }
+    
+    .site-workshop-rent form select{
+        width: 40%;
+    }
+    
+    .site-workshop-rent form textarea{
+        width: 40%;
+    }
+    
+.site-workshop-rent form p{
+    padding: 0.5em 0.5em 0.2em 0.5em;
+    text-align: left;
+    transform: translateX(30%);
 }
