@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Title & Meta Informations -->
+    <title>Titus Fotografie | Über Uns</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    
+    <!-- CSS / Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/ionicons.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Fallback -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.full.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    
+    <!-- BERECHNUNG -->
+    <script type="text/javascript" language="javascript">
+        function rechnen(){
+            var anzp,gespreis;
+            anzp=document.formular.anzp.value;
+            
+            document.formular.workshop;
+            document.getElementById("workshop");
+            
+            
+            if(document.formular.workshop.value==1){
+                gespreis = anzp * 80;
+            }
+            else if(document.formular.workshop.value==2){
+                gespreis = anzp * 120;
+            }
+            else if(document.formular.workshop.value==3){
+                gespreis = anzp * 260;
+            }
+            
+            document.formular.gespreis.value=gespreis;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header incl. Navigation -->
+    <header class="row site-header">
+        <div class="container">
+            <div class="small-2 medium-2 large-6 columns">
+                <!-- Title -->
+                <h1>
+                    <img src="img/title_logo.svg" alt="Titus-Fotografie" />
+                    Titus Fotografie
+                </h1>
+                
+                <!-- Navigation -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="#">workshops</a></li>
+                        <li><a href="pricing.html">pricing</a></li>
+                        <li><a href="impressum.html">impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Workshop Buchen -->
+    <div class="row site-workshop-rent">
+        <div class="container">
+            <!-- Heading -->
+            <h1 class="heading small-2 medium-2 large-6 columns">
+                BUCHUNG
+                <span class="border"></span>
+            </h1>
+            
+            <!-- Text -->
+            <h2>
+                Sollten Sie Interesse haben, an einem unserer Workshops teilzunehmen, dann füllen Sie einfach das Formular aus und wir setzen uns mit Ihnen in Kontakt.
+            </h2>
+            
+            <!-- Formular -->
+            <form action="post" action="php/buchen.php" name="formular">
+                <p>Vorname:</p>
+                <input id="vname" name="vname" type="text" placeholder="Vorname" required />
+                <p>Nachname:</p>
+                <input id="nname" name="nname" type="text" placeholder="Nachname" required />
+                <p>E-Mail:</p>
+                <input id="email" name="email" type="email" placeholder="E-Mail" required />
+                <p>Workshop wählen:</p>
+                <select name="workshop" id="workshop" onChange="rechnen()">
+                    <option value="1" name="portrait" id="portrait">Grundlagen Portraitfotografie</option>
+                    <option value="2" name="licht" id="licht">Grundlagen Licht</option>
+                    <option value="3" name="ideen" id="ideen">Kreative Fotografie & Ideenfindung</option>
+                </select>
+                <p>Styling / Make-Up:</p>
+                <select name="styling" id="styling">
+                    <option value="ja">Ja</option>
+                    <option value="nein">Nein</option>
+                </select>
+                <p>Anzahl der Personen:</p>
+                <input id="anzp" name="anzp" type="text" placeholder="Anzahl der Personen" onChange="rechnen()" required />
+                <p>Gesamtpreis:</p>
+                <input id="gespreis" name="gespreis" type="text" value="" readonly="1" />
+                <p>Wunschtermin:</p>
+                <input type="date" id="termin" name="termin" placeholder="Wunschtermin" required />
+                <p>Anmerkungen:</p>
+                <textarea id="comment_workshop" name="comment_workshop" type="text" placeholder="Dein Text ..." required ></textarea>
+                
+            </form>
+        </div>
+    </div>
+            
+    
+    <!-- Footer incl. Contact & Social Media -->
+    <footer class="row site-footer">
+        <div class="container">
+            <!-- Contact -->
+            <div class="small-2 medium-2 large-2 columns push contact">
+                <form method="post" action="php/contact.php">
+                    <h2>Kontaktieren Sie uns</h2>
+                    <p>Name</p>
+                    <input id="name" name="name" type="text" placeholder="Name" required/>
+                    <p>E-Mail</p>
+                    <input id="email" name="email" type="email" placeholder="E-Mail" required/>
+                    <p>Anliegen</p>
+                    <textarea id="comment" name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
+                    <button type="submit" name="send">Abschicken</button>
+                </form>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="small-2 medium-1 large-2 columns push social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-facebook"></i></a> <h4 class="social-name">facebook.com/titusfotografie</h4></li>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-twitter"></i></a> <h4 class="social-name">twitter.com/titusfotografie</h4></li>
+                    <li class="social-icon"><a href="#"><i class="icon ion-social-googleplus"></i></a><h4 class="social-name">googleplus.com/titusfotografie</h4></li>
+                </ul>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="small-2 medium-1 large-2 columns copyright">
+                <img src="img/title_logo.svg" class="footer-icon" alt="Titus-Fotografie" />
+                <h3>&copy; by Titus-Fotografie <br>Design by SoturiyARTS</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Navigation -->
+    <script>
+        $(function(){
+          $('#nav').click(function() {
+            $(this).toggleClass('open');
+          });
+        }); 
+    </script>
+    <!-- Slider -->
+    <script src="js/jquery.slides.js"></script>
+</body>
+</html>

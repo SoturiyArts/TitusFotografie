@@ -433,6 +433,44 @@ div.site-workshop-button a{
 div.site-workshop-button:hover{
     background: #4183D7;
 }
+
+/* WORKSHOP RENT */
+.site-workshop-rent{
+    background: white;
+}
+.site-workshop-rent h2{
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+.site-workshop-rent form p{
+    padding: 0.5em 0.5em 0.2em 0.5em;
+    text-align: left;
+}
+.site-workshop-rent form input{
+    padding: 0.5em;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5px 0 5px 0;
+    border: 2px solid #4183D7;
+    background: #ECF0F1;
+}
+.site-workshop-rent form select{
+    padding: 0.5em;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5px 0 5px 0;
+    border: 2px solid #4183D7;
+    background: #ECF0F1;
+    
+}
+.site-workshop-rent form textarea{
+    padding: 0.5em;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5px 0 5px 0;
+    border: 2px solid #4183D7;
+    background: #ECF0F1;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
     .site-slider{                       /* SLIDER HIDDEN IN SMARTPHONE-SIZE */
