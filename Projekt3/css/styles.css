@@ -435,9 +435,6 @@ div.site-workshop-button:hover{
 }
 
 /* WORKSHOP RENT */
-
-
-
 .site-workshop-rent{
     background: white;
     text-align: center;
@@ -457,6 +454,7 @@ div.site-workshop-button:hover{
     border-radius: 5px 0 5px 0;
     border: 2px solid #4183D7;
     background: #ECF0F1;
+    margin-bottom: 1em;
 }
 .site-workshop-rent form select{
     padding: 0.5em;
@@ -475,6 +473,22 @@ div.site-workshop-button:hover{
     border: 2px solid #4183D7;
     background: #ECF0F1;
 }
+.site-workshop-rent form button{
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px 0 5px 0;
+    border: 0px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background: #4183D7;
+    color: white;
+}
+.site-workshop-rent form button:hover{
+    background: #2c3e50;
+}
 
 }
 /* MEDIA QUERIES */
@@ -492,10 +506,21 @@ div.site-workshop-button:hover{
     div.site-workshop-button a{
         padding: 0.8em 1.5em 0.8em 1.5em;
     }
+    .site-workshop-rent form button{
+        width: 45%;
+        margin-left: 54%;
+    }
 }
 @media screen and (min-width: 710px){
     div.site-workshop-button a{
         padding: 0.8em 3em 0.8em 3em;
+    }
+}
+@media  screen and (min-width: 850px){
+    .site-workshop-rent form button{
+        width: 29.5%;
+        margin-left: 69.5%;
+       
     }
 }
 @media screen and (min-width: 1000px){
@@ -584,13 +609,14 @@ div.site-workshop-button:hover{
         font-size: 1.2em;
     }
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 800px){
     #nav{                       /*  DROP DOWN NAV IN SMALL-DEVICES  */
         width: 100%;
         top: 65px;
     }
     #nav:before{
-        content:'\2630';
+        content:'Menue';
+        color: white;
         display: block;
         position: absolute;
         right: 3%;
@@ -630,23 +656,4 @@ div.site-workshop-button:hover{
         -moz-transform: translateY(0px);
         -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
     }
-}
-
-@media screen and (min-width: 421px){
-    .site-workshop-rent form input{
-        width: 40%;
-    }
-    
-    .site-workshop-rent form select{
-        width: 40%;
-    }
-    
-    .site-workshop-rent form textarea{
-        width: 40%;
-    }
-    
-.site-workshop-rent form p{
-    padding: 0.5em 0.5em 0.2em 0.5em;
-    text-align: left;
-    transform: translateX(30%);
 }

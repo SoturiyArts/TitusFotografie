@@ -62,10 +62,11 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="about.html">über uns</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
-                        <li><a href="#">workshops</a></li>
-                        <li><a href="pricing.html">pricing</a></li>
+                        <li><a href="workshops.html">workshops</a></li>
+                        <li><a href="pricing.html">preise</a></li>
+                        <li><a href="contact.html">kontakt</a></li>
                         <li><a href="impressum.html">impressum</a></li>
                     </ul>
                 </nav>
@@ -88,32 +89,53 @@
             </h2>
             
             <!-- Formular -->
-            <form action="post" action="php/buchen.php" name="formular">
-                <p>Vorname:</p>
-                <input id="vname" name="vname" type="text" placeholder="Vorname" required />
-                <p>Nachname:</p>
-                <input id="nname" name="nname" type="text" placeholder="Nachname" required />
-                <p>E-Mail:</p>
-                <input id="email" name="email" type="email" placeholder="E-Mail" required />
-                <p>Workshop wählen:</p>
-                <select name="workshop" id="workshop" onChange="rechnen()">
-                    <option value="1" name="portrait" id="portrait">Grundlagen Portraitfotografie</option>
-                    <option value="2" name="licht" id="licht">Grundlagen Licht</option>
-                    <option value="3" name="ideen" id="ideen">Kreative Fotografie & Ideenfindung</option>
-                </select>
-                <p>Styling / Make-Up:</p>
-                <select name="styling" id="styling">
-                    <option value="ja">Ja</option>
-                    <option value="nein">Nein</option>
-                </select>
-                <p>Anzahl der Personen:</p>
-                <input id="anzp" name="anzp" type="text" placeholder="Anzahl der Personen" onChange="rechnen()" required />
-                <p>Gesamtpreis:</p>
-                <input style="text-align:right;"  id="gespreis" name="gespreis" type="text" value="" readonly="1"/>
-                <p>Wunschtermin:</p>
-                <input type="date" id="termin" name="termin" placeholder="Wunschtermin" required />
-                <p>Anmerkungen:</p>
-                <textarea id="comment_workshop" name="comment_workshop" type="text" placeholder="Dein Text ..." required ></textarea>
+            <form method="post" action="contact_buchen.php" name="formular">
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Vorname:</p>
+                    <input id="vname" name="vname" type="text" placeholder="Vorname" required/>
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Nachname:</p>
+                    <input id="nname" name="nname" type="text" placeholder="Nachname" required />
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>E-Mail:</p>
+                    <input id="email" name="email" type="email" placeholder="E-Mail" required />
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Workshop wählen:</p>
+                    <select name="workshop" id="workshop" onChange="rechnen()">
+                        <option value="1" name="portrait" id="portrait">Grundlagen Portraitfotografie</option>
+                        <option value="2" name="licht" id="licht">Grundlagen Licht</option>
+                        <option value="3" name="ideen" id="ideen">Kreative Fotografie & Ideenfindung</option>
+                    </select>
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Styling / Make-Up:</p>
+                    <select name="styling" id="styling">
+                        <option value="ja">Ja</option>
+                        <option value="nein">Nein</option>
+                    </select>
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Anzahl der Personen:</p>
+                    <input id="anzp" name="anzp" type="text" placeholder="Anzahl der Personen" onChange="rechnen()" required />
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Gesamtpreis:</p>
+                    <input style="text-align:right;"  id="gespreis" name="gespreis" type="text" value="" readonly="1"/>
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Wunschtermin:</p>
+                    <input type="date" id="termin" name="termin" placeholder="Wunschtermin" required />
+                </div>
+                <div class="small-2 medium-1 large-2 columns">
+                    <p>Anmerkungen:</p>
+                    <textarea id="comment" name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
+                </div>
+                <div class="small-2 medium-2 large-6 columns">
+                    <button type="submit" name="submit">BUCHEN</button>
+                </div>
                 
             </form>
         </div>
@@ -125,15 +147,15 @@
         <div class="container">
             <!-- Contact -->
             <div class="small-2 medium-2 large-2 columns push contact">
-                <form method="post" action="php/contact.php">
+                <form method="post" action="contact_footer.php">
                     <h2>Kontaktieren Sie uns</h2>
                     <p>Name</p>
-                    <input id="name" name="name" type="text" placeholder="Name" required/>
+                    <input name="name" type="text" placeholder="Name" required/>
                     <p>E-Mail</p>
-                    <input id="email" name="email" type="email" placeholder="E-Mail" required/>
+                    <input name="email" type="email" placeholder="E-Mail" required/>
                     <p>Anliegen</p>
-                    <textarea id="comment" name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
-                    <button type="submit" name="send">Abschicken</button>
+                    <textarea name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
+                    <button type="submit" name="submit">Abschicken</button>
                 </form>
             </div>
             

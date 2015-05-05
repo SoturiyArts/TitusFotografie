@@ -19,6 +19,9 @@
 .push{
     float: right;
 }
+.pull{
+    float: left;
+}
 .row{
     width:auto;
 }

@@ -38,11 +38,12 @@
                 <nav id="nav">
                     <ul>
                         <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="#">über uns</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
                         <li><a href="workshops.html">workshops</a></li>
-                        <li><a href="pricing.html">pricing</a></li>
-                        <li><a href="#">impressum</a></li>
+                        <li><a href="pricing.html">preise</a></li>
+                        <li><a href="contact.html">kontakt</a></li>
+                        <li><a href="impressum.html">impressum</a></li>
                     </ul>
                 </nav>
             </div>
@@ -113,15 +114,15 @@
         <div class="container">
             <!-- Contact -->
             <div class="small-2 medium-2 large-2 columns push contact">
-                <form method="post" action="php/contact.php">
+                <form method="post" action="contact_footer.php">
                     <h2>Kontaktieren Sie uns</h2>
                     <p>Name</p>
-                    <input id="name" name="name" type="text" placeholder="Name" required/>
+                    <input name="name" type="text" placeholder="Name" required/>
                     <p>E-Mail</p>
-                    <input id="email" name="email" type="email" placeholder="E-Mail" required/>
+                    <input name="email" type="email" placeholder="E-Mail" required/>
                     <p>Anliegen</p>
-                    <textarea id="comment" name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
-                    <button type="submit" name="send">Abschicken</button>
+                    <textarea name="comment" type="text" placeholder="Dein Text ..." required ></textarea>
+                    <button type="submit" name="submit">Abschicken</button>
                 </form>
             </div>
             
