@@ -286,7 +286,13 @@ a{
     background: white;
 }
 .site-about article{
-    padding: 0.5em;
+    padding: 1em 0.5em 1em 0.5em;
+}
+.site-about article.about-border{
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .site-about article img{
     margin: 0.5em;
@@ -507,6 +513,45 @@ div.site-workshop-button:hover{
     background: #2c3e50;
 }
 
+/* CONTACT */
+.site-contact{
+    background: white;
+
+}
+.site-contact article h2{
+    font-size: 1em;
+}
+.site-contact article h3{
+    margin-top: 1em;
+    font-weight: bold;
+    color: #2e3c50;
+}
+.site-contact article h3 ul{
+    text-align: center;
+    padding: 0.5em;
+}
+.site-contact article h3 ul li{
+    padding: 0.5em;
+}
+.site-contact article h3 ul li a i{
+    font-size: 1.2em;
+    padding-right: 1em;
+}
+.site-contact article h3 ul li a{
+    text-decoration: none;
+    color: #4183D7;
+}
+.site-contact article h4{
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+.site-contact article h4 strong{
+    font-weight: bold;
+}
+.site-contact article.google-api{
+    margin-bottom: 1em;
+}
+
 /* CONTACT_SEND */
 .site-contact-send{
     background: #ffffff;
@@ -515,7 +560,44 @@ div.site-workshop-button:hover{
     font-weight: 1.2em;
     text-align: center;
     padding: 0.5em;
+    align-content: center;
 }
+
+/* PORTFOLIO */
+.site-portfolio{
+    background: white;
+}
+.site-portfolio article a{
+    position: relative;
+    float: left;
+    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+}
+.site-portfolio article a img{
+    max-width: 100%;
+    display: block;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.site-portfolio article a img.blur:hover{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+}
+.site-portfolio article a span.kat_title{
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    left: 2px;
+    bottom: 15px;
+    z-index: 1;
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.6);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
     .site-slider{                       /* SLIDER HIDDEN IN SMARTPHONE-SIZE */
