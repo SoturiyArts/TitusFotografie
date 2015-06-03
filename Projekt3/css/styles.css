@@ -567,37 +567,49 @@ div.site-workshop-button:hover{
 .site-portfolio{
     background: white;
 }
-.site-portfolio article a{
-    position: relative;
-    float: left;
-    box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+.site-portfolio article{
+    padding: 0;
 }
-.site-portfolio article a img{
-    max-width: 100%;
-    display: block;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-}
-.site-portfolio article a img.blur:hover{
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-}
-.site-portfolio article a span.kat_title{
-    color: #fff;
-    font-size: 1em;
-    font-weight: bold;
-    position: absolute;
-    left: 2px;
-    bottom: 15px;
-    z-index: 1;
+.site-portfolio article div.kat-title1{
+    background: grey;
+    height: 300px;
     padding: 0.5em;
-    background: rgba(0, 0, 0, 0.6);
 }
-
+.site-portfolio article div.kat-img1{
+    background: silver;
+    height: 300px;
+    padding: 0.5em;
+    float: left;
+    overflow: scroll;
+    -webkit-scrolling: touch;
+}
+.site-portfolio article div ul{
+    width: 3000px;
+    overflow: hidden;
+}
+.site-portfolio article ul li{
+    float: left;
+    margin-left: 1em;
+    overflow: hidden;
+}
+.site-portfolio article ul li div.buisness_1{
+    background: url(../img/referenzen/placeholder_filme.jpg);
+    width: 250px;
+    height: 270px;
+}
+.site-portfolio article div.kat-title2{
+    background: silver;
+    height: 300px;
+    padding: 0.5em;
+}
+.site-portfolio article div.kat-img2{
+    background: grey;
+    height: 300px;
+    padding: 0.5em;
+}
+.site-portfolio article{
+    margin: 0;          /*  ABSTÄNDE ZWISCHEN KATEGORIEN 0 */
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
     .site-slider{                       /* SLIDER HIDDEN IN SMARTPHONE-SIZE */
