@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/ionicons.css" />
     <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     
     <!-- JS -->
@@ -62,42 +63,82 @@
             <!-- Buisnessreportagen -->
             <article class="small-2 medium-2 large-6 columns">
                 <!-- Title -->
-                <div class="small-2 medium-1 large-2 columns kat-title1">
+                <div class="small-2 medium-2 large-2 columns kat-title1">
                     <h1>Buisnessreportagen</h1>
                 </div>
                 
                 <!-- Kategorien -->
-                <div class="small-2 medium-1 large-4 columns kat-img1">
-                    <ul>
-                        <li><div class="buisness_1">asd</div></li>
-                        <li><div class="buisness_1">asd</div></li>
-                        <li><div class="buisness_1">asd</div></li>
-                        <li><div class="buisness_1">asd</div></li>
-                        <li><div class="buisness_1">asd</div></li>
-                        <li><div class="buisness_1">asd</div></li>
-                    </ul>
+                <div class="small-2 medium-2 large-4 columns kat-img1 slick-class">
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_hochzeit.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                </div>
+            </article>
+            
+            <!-- Produktfotografie -->
+            <article class="small-2 medium-2 large-6 columns">
+                <!-- Title -->
+                <div class="small-2 medium-2 large-2 columns kat-title2">
+                    <h1>Produktfotografie</h1>
+                </div>
+                
+                <!-- Kategorien -->
+                <div class="small-2 medium-2 large-4 columns kat-img2 slick-class">
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_hochzeit.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
                 </div>
             </article>
             
             <!-- Portraitfotografie -->
             <article class="small-2 medium-2 large-6 columns">
                 <!-- Title -->
-                <div class="small-2 medium-1 large-2 columns kat-title2">
+                <div class="small-2 medium-2 large-2 columns kat-title1">
                     <h1>Portraitfotografie</h1>
                 </div>
                 
                 <!-- Kategorien -->
-                <div class="small-2 medium-1 large-4 columns kat-img2">
-                    <ul>
-                        <li>KATEGORIE 1</li>
-                        <li>KATGEORIE 2</li>
-                        <li>KATEGORIE 3</li>
-                        <li>KATEGORIE 4</li>
-                        <li>KATEGORIE 5</li>
-                    </ul>
+                <div class="small-2 medium-2 large-4 columns kat-img1 slick-class">
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_hochzeit.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
                 </div>
             </article>
             
+            <!-- Hochzeitsshootings -->
+            <article class="small-2 medium-2 large-6 columns kat-last">
+                <!-- Title -->
+                <div class="small-2 medium-2 large-2 columns kat-title2">
+                    <h1>Hochzeitsshootings</h1>
+                </div>
+                
+                <!-- Kategorien -->
+                <div class="small-2 medium-2 large-4 columns kat-img2 slick-class">
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_hochzeit.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_produkt.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_portrait.jpg" /></div>
+                    <div><img src="img/referenzen/placeholder_filme.jpg" /></div>
+                </div>
+            </article>
         </div>
     </div>
             
@@ -149,5 +190,61 @@
     </script>
     <!-- Slider -->
     <script src="js/jquery.slides.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slick-class').slick({
+              dots: false,
+              arrows: false,
+              infinite: true,
+              swipeToSlide: true,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              centerMode: true,
+              initialSlide: 3,
+              autoPlay: false,
+              responsive: [
+                {
+                  breakpoint: 1100,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 860,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 650,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 530,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 400,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+            });
+        });
+    </script>
 </body>
 </html>

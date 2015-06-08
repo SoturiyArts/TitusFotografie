@@ -516,7 +516,6 @@ div.site-workshop-button:hover{
 /* CONTACT */
 .site-contact{
     background: white;
-
 }
 .site-contact article h2{
     font-size: 1em;
@@ -568,47 +567,59 @@ div.site-workshop-button:hover{
     background: white;
 }
 .site-portfolio article{
+    position: relative;
     padding: 0;
+    margin: 0;
+}
+.site-portfolio img{
+    width: 225px;
+    height: 290px;
+    padding: 0.5em 0.5em 0 0.5em;
 }
 .site-portfolio article div.kat-title1{
-    background: grey;
     height: 300px;
-    padding: 0.5em;
-}
-.site-portfolio article div.kat-img1{
-    background: silver;
-    height: 300px;
-    padding: 0.5em;
-    float: left;
-    overflow: scroll;
-    -webkit-scrolling: touch;
-}
-.site-portfolio article div ul{
-    width: 3000px;
-    overflow: hidden;
-}
-.site-portfolio article ul li{
-    float: left;
-    margin-left: 1em;
-    overflow: hidden;
-}
-.site-portfolio article ul li div.buisness_1{
-    background: url(../img/referenzen/placeholder_filme.jpg);
-    width: 250px;
-    height: 270px;
+    background: #2e3c50;
+    position: relative;
 }
 .site-portfolio article div.kat-title2{
-    background: silver;
     height: 300px;
-    padding: 0.5em;
+    background: #6C7A89;
+    position: relative;
+}
+.site-portfolio article div.kat-title1 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+.site-portfolio article div.kat-title2 h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+.site-portfolio article div.kat-img1{
+    height: 300px;
+    background: #34495E;
 }
 .site-portfolio article div.kat-img2{
-    background: grey;
     height: 300px;
-    padding: 0.5em;
+    background: #BDC3C7;
 }
-.site-portfolio article{
-    margin: 0;          /*  ABSTÄNDE ZWISCHEN KATEGORIEN 0 */
+.site-portfolio article div.kat-img1 div{
+    margin-top: 2px;
+}
+.site-portfolio article div.kat-img2 div{
+    margin-top: 2px;
+}
+.site-portfolio .kat-last{
+    margin-bottom: 1.5em;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 420px){
