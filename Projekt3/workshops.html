@@ -21,6 +21,7 @@
     <script src="js/modernizr.full.js"></script>
     <script src="js/jquery.slides.min.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/uilang.js"></script>
 </head>
 
 <body>
@@ -40,10 +41,9 @@
                         <li><a href="index.html">home</a></li>
                         <li><a href="about.html">über uns</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
-                        <li><a href="#">workshops</a></li>
+                        <li><a href="workshops.html">workshops</a></li>
                         <li><a href="pricing.html">preise</a></li>
-                        <li><a href="contact.html">kontakt</a></li>
-                        <li><a href="impressum.html">impressum</a></li>
+                        <li><a href="anfahrt.html">anfahrt</a></li>
                     </ul>
                 </nav>
             </div>
@@ -67,26 +67,29 @@
                         <h1>Grundlagen<br>Portraitfotografie</h1>
                     </div>
                     <!-- Info-Klapptext -->
-                    <div class="site-workshop-text">
-                        <p class="text-above">
-                            Jeder von uns möchte gute Bilder machen und sich von der Masse abheben. Gerade im Bereich der heutigen Digital-Fotografie möchten wir lernen, wie ein Meister Fotos zu machen.<br>
-                            In diesem Workshop erkläre ich Ihnen die grundlegenden Voraussetzungen und Bedingungen für optimale Portraits. Ich zeige Ihnen eine neue Sichtweise, Menschen zu fotografieren.
-                        </p>
-                        <h2>Im Workshop enthalten:</h2>
-                        <ul class="workshop-list">
-                            <li>Grundlagen Kamera & Technik</li>
-                            <li>Umgang mit der Kamera</li>
-                            <li>Welche Modi für welche Aufnahme</li>
-                            <li>Welche Einstellung für welche Situation</li>
-                            <li>Umgang mit dem Model</li>
-                            <li>Erfahrungsberichte</li>
-                            <li>Praxisbeispiele und eigenes Ausprobieren</li>
-                        </ul>
-                        <p class="text-under">
-                            Sie erhalten die Bildrechte für das aufgenommene Material (<strong>nicht</strong> für kommerzielle Zwecke) und einen Ausdruck der Workshop-Folien.<br>
-                            Zudem erhalten Sie eine Teilnahmebestätigung.<br>
-                            Und für Knabbereien und Getränke ist natürlich auch gesorgt.
-                        </p>
+                    <div id="accordion">
+                        <h3>Informationen</h3>
+                        <div class="site-workshop-text">
+                            <p class="text-above">
+                                Jeder von uns möchte gute Bilder machen und sich von der Masse abheben. Gerade im Bereich der heutigen Digital-Fotografie möchten wir lernen, wie ein Meister Fotos zu machen.<br>
+                                In diesem Workshop erkläre ich Ihnen die grundlegenden Voraussetzungen und Bedingungen für optimale Portraits. Ich zeige Ihnen eine neue Sichtweise, Menschen zu fotografieren.
+                            </p>
+                            <h2>Im Workshop enthalten:</h2>
+                            <ul class="workshop-list">
+                                <li>Grundlagen Kamera & Technik</li>
+                                <li>Umgang mit der Kamera</li>
+                                <li>Welche Modi für welche Aufnahme</li>
+                                <li>Welche Einstellung für welche Situation</li>
+                                <li>Umgang mit dem Model</li>
+                                <li>Erfahrungsberichte</li>
+                                <li>Praxisbeispiele und eigenes Ausprobieren</li>
+                            </ul>
+                            <p class="text-under">
+                                Sie erhalten die Bildrechte für das aufgenommene Material (<strong>nicht</strong> für kommerzielle Zwecke) und einen Ausdruck der Workshop-Folien.<br>
+                                Zudem erhalten Sie eine Teilnahmebestätigung.<br>
+                                Und für Knabbereien und Getränke ist natürlich auch gesorgt.
+                            </p>
+                        </div>
                     </div>
                     <!-- Time -->
                     <div class="site-workshop-time">
@@ -115,6 +118,8 @@
                         <h1>Grundlagen<br>Licht</h1>
                     </div>
                     <!-- Info-Klapptext -->
+                    <div id="accordion2">
+                        <h3>Informationen</h3>
                     <div class="site-workshop-text">
                         <p class="text-above">
                             Licht ist ein sehr wichtiger Bestandteil in der Fotografie, ob Digital oder Analog. Zu wenig Licht oder zu viel kann ein Bild zerstören.<br>
@@ -136,6 +141,7 @@
                             Zudem erhalten Sie eine Teilnahmebestätigung.<br>
                             Und für Knabbereien und Getränke ist natürlich auch gesorgt.
                         </p>
+                    </div>
                     </div>
                     <!-- Time -->
                     <div class="site-workshop-time">
@@ -162,6 +168,8 @@
                         <h1>Fotografie<br>& Ideenfindung</h1>
                     </div>
                     <!-- Info-Klapptext -->
+                    <div id="accordion3">
+                        <h3>Informationen</h3>
                     <div class="site-workshop-text">
                         <p class="text-above">
                             Nicht immer hat man coole Ideen für ein Foto. Ich möchte Ihnen zeigen, wie einfach es sein kann, mit einfachsten Mitteln, kreative und herausstechende Fotos zu machen.<br>
@@ -181,6 +189,7 @@
                             Zudem erhalten Sie eine Teilnahmebestätigung.<br>
                             Und für belegte Brote und Getränke ist natürlich auch gesorgt.
                         </p>
+                    </div>
                     </div>
                     <!-- Time -->
                     <div class="site-workshop-time">
@@ -202,6 +211,7 @@
                     </div>
             </div>
         </div>
+        
     </div>
             
     
@@ -252,5 +262,33 @@
     </script>
     <!-- Slider -->
     <script src="js/jquery.slides.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content",
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#accordion2").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content",
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#accordion3").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content",
+            });
+        });
+    </script>
 </body>
 </html>

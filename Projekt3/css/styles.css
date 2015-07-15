@@ -151,7 +151,7 @@ a{
 
 /* LATEST WORK */
 .site-works{
-    background: #4183D7;
+    background: white;
     text-align: center;
 }
 .site-works .border{
@@ -164,6 +164,20 @@ a{
 .site-works a img{
     border: 2px solid #ffffff;
     border-radius: 5px;
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(0%); 
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(0%); 
+    -o-transition: .5s ease-in-out;
+}
+.site-works a img:hover{
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: .5s ease-in-out;
 }
 
 /* FOOTER */
@@ -277,6 +291,24 @@ a{
 .site-footer div img.footer-icon{
     display: none;
 }
+
+/* DATENSCHUTZ */
+.site-imprint{
+    border-top: 1px solid #2a2a2a;
+    background: #1f1f1f;
+}
+.site-imprint h2.coded{
+    padding: 0.5em;
+    color: silver;
+}
+.site-imprint h2.coded strong{
+    font-weight: bold;
+}
+.site-imprint h2.imprint a{
+    float: right;
+    padding: 0.5em;
+    color: silver;
+}
 /* MAIN PAGE END */
 
 /* OTHER PAGES */
@@ -285,9 +317,13 @@ a{
     text-align: center;
     background: white;
 }
+.site-about article.about-titus{
+    padding: 3em 0.5em 3em 0.5em;
+}
 .site-about article{
     padding: 1em 0.5em 1em 0.5em;
 }
+
 .site-about article.about-border{
     border-bottom: 1px solid silver;
     border-top: 1px solid silver;
@@ -341,20 +377,18 @@ div.site-workshop-header h1{
     font-size: 1em;
     text-align: center;
 }
+.site-workshop h3{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
 div.site-workshop-text{
     width: 100%;
-    height: 150px;
-    overflow: hidden;
     padding: 0.7em;
-    transition: height 1s ease;
-    -moz-transition: height 1s ease;
-    -webkit-transition: height 1s ease;
     border-right: 1px solid black;
     border-left: 1px solid black;
-    border-bottom: 1px solid black;
-}
-div.site-workshop-text:hover{
-    height: auto;
 }
 div.site-workshop-text h2{
     font-weight: bold;
@@ -387,6 +421,7 @@ div.site-workshop-time{
     width: 100%;
     position: relative;
     background: #ECECEC;
+    border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
@@ -518,34 +553,14 @@ div.site-workshop-button:hover{
     background: white;
 }
 .site-contact article h2{
-    font-size: 1em;
-}
-.site-contact article h3{
-    margin-top: 1em;
     font-weight: bold;
-    color: #2e3c50;
-}
-.site-contact article h3 ul{
-    text-align: center;
     padding: 0.5em;
 }
-.site-contact article h3 ul li{
+.site-contact article ul{
     padding: 0.5em;
 }
-.site-contact article h3 ul li a i{
-    font-size: 1.2em;
-    padding-right: 1em;
-}
-.site-contact article h3 ul li a{
-    text-decoration: none;
-    color: #4183D7;
-}
-.site-contact article h4{
+.site-contact article ul li{
     padding: 0.5em;
-    margin-top: 0.5em;
-}
-.site-contact article h4 strong{
-    font-weight: bold;
 }
 .site-contact article.google-api{
     margin-bottom: 1em;
@@ -786,14 +801,19 @@ div.site-workshop-button:hover{
     #slider-content1 p, #slider-content2 p, #slider-content3 p{
         font-size: 1.2em;
     }
+    .site-slider{
+        max-height: 100vh; !important
+    }
 }
 @media screen and (max-width: 800px){
     #nav{                       /*  DROP DOWN NAV IN SMALL-DEVICES  */
         width: 100%;
         top: 65px;
+        z-index: -999;
     }
     #nav:before{
-        content:'Menue';
+        content:'MENU';
+        font-size: 1em;
         color: white;
         display: block;
         position: absolute;
@@ -819,6 +839,7 @@ div.site-workshop-button:hover{
         color: #ffffff;
     }
     #nav ul{
+        position: absolute;
         transition: 350ms;
         -moz-transition: 350ms;
         -webkit-transition: 350ms;
@@ -830,8 +851,15 @@ div.site-workshop-button:hover{
         -webkit-transform-origin: 50% 0;
     }
     #nav.open ul{
+        position: relative;
         transform: translateY(0px);
         -moz-transform: translateY(0px);
         -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
     }
+}
+
+/* TEST WORKSHOPCOPY */
+#accordion h3{
+    font-size: 1.5em;
+    padding: 0.5em;
 }
